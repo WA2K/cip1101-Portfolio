@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <dialog id="lectures" class="windows">
+            <div class="box">
+                <div class="header">
+                    <img src="images/folder.png">
+                    <p>Lectures</p>
+                    <div class="spacer" style="width: 86.5%;"></div>
+                    <button id="lectures_close">X</button>
+                </div>
+                <div class="nav">
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Tools</p>
+                    <p>Help</p>
+                </div>
+                <div class="ribbon">
+                    <div class="direction">
+                        <img src="images/back.png">
+                        <p>Back</p>
+                        <img src="images/forward.png">
+                        <p>Forward</p>
+                    </div>
+                    <div class="direction">
+                        <img src="images/search.png">
+                        <p>Search</p>
+                        <img src="images/folder.png">
+                        <p>Folder</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <p style="color:#797a73;">Address</p>
+                    <div class="bar">
+                        <img src="images/folder.png">
+                        <p style="color:black;">C:\Users\WAIIK\Desktop\Prelims</p>
+                    </div>
+                    <div class="go">
+                        <img src="images/forward.png">
+                        <p style="color:black;">Go</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div style="width:30%;">
+                        <div class="directory-header">
+                            <p>Folders</p>
+                        </div>
+                        <div class="directory">
+                            <div class="dir-list">
+                                <img src="images/computer.png">
+                                <p>Desktop</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/computer.png">
+                                <p>My Computer</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/drive.png">
+                                <p>Local Disk (C:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/disk.png">
+                                <p>WAIIK_EN (D:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Shared Documents</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Kodeuxtryvat's Documents</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/network.png">
+                                <p>My Network Places</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/bin.png">
+                                <p>Recycle Bin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="files">
+                        <div class="divider">
+                            <div>
+                                <a target="_blank" href="resources/lectures/lect1.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                        <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect1_HTML-Intro.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">1 KB</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <br>
+                                <a target="_blank" href="resources/lectures/lect2.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                        <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect2_HTML-Struct.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">5 KB</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <br>
+                                <a target="_blank" href="resources/lectures/lect3.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                        <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect3_Tables.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">9 KB</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <br>
+                                <a target="_blank" href="resources/lectures/lect4.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                    <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect4_Lists-Links-Img.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">4 KB</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <br>
+                                <a target="_blank" href="resources/lectures/lect5.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                    <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect5_CSS.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">5 KB</p>
+                                        </div>
+                                    </div>
+                                </a>     
+                                <br>
+                            </div>
+                            <div>
+                                <a target="_blank" href="resources/lectures/lect6.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                    <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect6_Forms.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">6 KB</p>
+                                        </div>
+                                    </div>
+                                </a>   
+                                <br>
+                                <a target="_blank" href="resources/lectures/lect7.html" style="text-decoration: none;">
+                                    <div class="icon-card-3">
+                                    <img class="folder-2" src="images/explorer.png">
+                                        <div class="desc">
+                                            <p style="color:black;">Lect7_Bootstrap.html</p>
+                                            <p style="color:grey">HTML Document</p>
+                                            <p style="color:grey">1 KB</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+		</dialog>
+        <dialog id="prelims" class="windows">
+            <div class="box">
+                <div class="header">
+                    <img src="images/folder.png">
+                    <p>Prelims</p>
+                    <div class="spacer"></div>
+                    <button id="prelims_close">X</button>
+                </div>
+                <div class="nav">
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Tools</p>
+                    <p>Help</p>
+                </div>
+                <div class="ribbon">
+                    <div class="direction">
+                        <img src="images/back.png">
+                        <p>Back</p>
+                        <img src="images/forward.png">
+                        <p>Forward</p>
+                    </div>
+                    <div class="direction">
+                        <img src="images/search.png">
+                        <p>Search</p>
+                        <img src="images/folder.png">
+                        <p>Folder</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <p style="color:#797a73;">Address</p>
+                    <div class="bar">
+                        <img src="images/folder.png">
+                        <p style="color:black;">C:\Users\WAIIK\Desktop\Prelims</p>
+                    </div>
+                    <div class="go">
+                        <img src="images/forward.png">
+                        <p style="color:black;">Go</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div style="width:30%;">
+                        <div class="directory-header">
+                            <p>Folders</p>
+                        </div>
+                        <div class="directory">
+                            <div class="dir-list">
+                                <img src="images/computer.png">
+                                <p>Desktop</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/computer.png">
+                                <p>My Computer</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/drive.png">
+                                <p>Local Disk (C:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/disk.png">
+                                <p>WAIIK_EN (D:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Shared Documents</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Kodeuxtryvat's Documents</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/network.png">
+                                <p>My Network Places</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/bin.png">
+                                <p>Recycle Bin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="files">
+                        <a target="_blank" href="resources/prelim/ImageGallery.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Act2_Table-Gallery.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">3 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                        <a target="_blank" href="resources/prelim/dev_page/Developers_Page.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Act3_Dev-Page.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">9 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                        <a target="_blank" href="resources/prelim/PrelimHandsOnQuiz1/PrelimHandsOnQuiz1.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Quiz1_Table-with-Img.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">4 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                        <a target="_blank" href="resources/prelim/LUZANO_PRELIM-EXAM/index.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                            <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">EXAM_Furniture-sale.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">2 KB</p>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+		</dialog>
+        <dialog id="midterms" class="windows">
+            <div class="box">
+                <div class="header">
+                    <img src="images/folder.png">
+                    <p>Midterms</p>
+                    <div class="spacer" style="width: 86%;"></div>
+                    <button id="midterms_close">X</button>
+                </div>
+                <div class="nav">
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Tools</p>
+                    <p>Help</p>
+                </div>
+                <div class="ribbon">
+                    <div class="direction">
+                        <img src="images/back.png">
+                        <p>Back</p>
+                        <img src="images/forward.png">
+                        <p>Forward</p>
+                    </div>
+                    <div class="direction">
+                        <img src="images/search.png">
+                        <p>Search</p>
+                        <img src="images/folder.png">
+                        <p>Folder</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <p style="color:#797a73;">Address</p>
+                    <div class="bar">
+                        <img src="images/folder.png">
+                        <p style="color:black;">C:\Users\WAIIK\Desktop\Midterms</p>
+                    </div>
+                    <div class="go">
+                        <img src="images/forward.png">
+                        <p style="color:black;">Go</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div style="width:30%;">
+                        <div class="directory-header">
+                            <p>Folders</p>
+                        </div>
+                        <div class="directory">
+                            <div class="dir-list">
+                                <img src="images/computer.png">
+                                <p>Desktop</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/computer.png">
+                                <p>My Computer</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/drive.png">
+                                <p>Local Disk (C:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/disk.png">
+                                <p>WAIIK_EN (D:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Shared Documents</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Kodeuxtryvat's Documents</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/network.png">
+                                <p>My Network Places</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/bin.png">
+                                <p>Recycle Bin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="files">
+                        <a target="_blank" href="resources/midterm/MidAct2LIST.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Act2_Table-of-Contents.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">2 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                        <a target="_blank" href="resources/midterm/CIP1101_MIDACT3/MidLect6.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Act3_Image-mapping.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">6 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                        <a target="_blank" href="resources/midterm/midAct4/MidtermHandsOnAct3.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Act4_Admission-form.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">22.8 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br>
+                        <a target="_blank" href="resources/midterm/mid_exam/MidExam.html" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                            <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">EXAM_Informative-page.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">26 KB</p>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+		</dialog>
+        <dialog id="finals" class="windows">
+            <div class="box">
+                <div class="header">
+                    <img src="images/folder.png">
+                    <p>Finals</p>
+                    <div class="spacer" style="width: 88.5%;"></div>
+                    <button id="finals_close">X</button>
+                </div>
+                <div class="nav">
+                    <p>File</p>
+                    <p>Edit</p>
+                    <p>View</p>
+                    <p>Tools</p>
+                    <p>Help</p>
+                </div>
+                <div class="ribbon">
+                    <div class="direction">
+                        <img src="images/back.png">
+                        <p>Back</p>
+                        <img src="images/forward.png">
+                        <p>Forward</p>
+                    </div>
+                    <div class="direction">
+                        <img src="images/search.png">
+                        <p>Search</p>
+                        <img src="images/folder.png">
+                        <p>Folder</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <p style="color:#797a73;">Address</p>
+                    <div class="bar">
+                        <img src="imgaes/folder.png">
+                        <p style="color:black;">C:\Users\WAIIK\Desktop\Finals</p>
+                    </div>
+                    <div class="go">
+                        <img src="images/forward.png">
+                        <p style="color:black;">Go</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div style="width:30%;">
+                        <div class="directory-header">
+                            <p>Folders</p>
+                        </div>
+                        <div class="directory">
+                            <div class="dir-list">
+                                <img src="images/computer.png">
+                                <p>Desktop</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/computer.png">
+                                <p>My Computer</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/drive.png">
+                                <p>Local Disk (C:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/disk.png">
+                                <p>WAIIK_EN (D:)</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Shared Documents</p>
+                            </div>
+                            <div class="dir-list-3">
+                                <img src="images/folder.png">
+                                <p>Kodeuxtryvat's Documents</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/network.png">
+                                <p>My Network Places</p>
+                            </div>
+                            <div class="dir-list-2">
+                                <img src="images/bin.png">
+                                <p>Recycle Bin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="files">
+                        <a target="_blank" href="https://finalsact2-cip1101.tiiny.site/" style="text-decoration: none;">
+                            <div class="icon-card-2">
+                                <img class="folder-2" src="images/explorer.png">
+                                <div class="desc">
+                                    <p style="color:black;">Act1_Admin-Dashboard.html</p>
+                                    <p style="color:grey">HTML Document</p>
+                                    <p style="color:grey">26 KB</p>
+                                </div>
+                            </div>
+                        </a>
+                        <br> 
+                    </div>
+                </div>
+            </div>
+		</dialog>
+        <div class="container">
+            <div class="desktop">
+                <div id="lectures_icon" class="icon-card">
+                    <img class="folder" src="images/folder.png">
+                    <p>Lectures</p>
+                </div>
+                <div id="prelims_icon" class="icon-card">
+                    <img class="folder" src="images/folder.png">
+                    <p>Prelims</p>
+                </div>
+                <div id="midterms_icon" class="icon-card">
+                    <img class="folder" src="images/folder.png">
+                    <p>Midterms</p>
+                </div>
+                <div id="finals_icon" class="icon-card">
+                    <img class="folder" src="images/folder.png">
+                    <p>Finals</p>
+                </div>
+                <div class="box windows-2">
+                    <div class="header" style="width: 550px;">
+                        <img src="images/notepad.png">
+                        <p>Notepad</p>
+                        <div class="spacer" style="width: 81.75%;"></div>
+                        <button>X</button>
+                    </div>
+                    <div class="nav">
+                        <p>File</p>
+                        <p>Edit</p>
+                        <p>View</p>
+                        <p>Tools</p>
+                        <p>Help</p>
+                    </div>
+                    <img src="images/banner.png" alt="banner">
+                </div>
+            </div>
+            <div class="taskbar">
+                <div class="taskbar-direction">
+                    <div class="start">
+                        <img src="images/start-logo.png">
+                        <p>Start</p>
+                    </div>
+                    <div style="width: 0.5%;"></div>
+                    <div class="open-window" id="lectures-t">
+                        <img src="images/folder.png">  
+                        <p>Lectures</p>
+                    </div>
+                    <div class="open-window" id="prelims-t">
+                        <img src="images/folder.png"> 
+                        <p>Prelims</p>
+                    </div>
+                    <div class="open-window" id="mid-t"> 
+                        <img src="images/folder.png"> 
+                        <p>Midterms</p>
+                    </div>
+                    <div class="open-window" id="final-t">
+                        <img src="images/folder.png">  
+                        <p>Finals</p>
+                    </div>
+                    <div class="open-window">
+                        <img src="images/notepad.png">  
+                        <p>Notepad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
