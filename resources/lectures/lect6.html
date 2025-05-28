@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CIP-1101: Lecture No. 6</title>
+        <link rel="stylesheet" href="lectStyle.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="header">
+                <div id="headerLeft">
+                    <p><b>CIP-1101: Lecture No. 6</b></p>
+                    <p>HTML Forms</p>
+                </div>
+                <div id="headerRight">
+                    <p>Luzano, John Wayne C.</p>
+                    <p>CSAD</p>
+                </div>
+            </div>
+            <div style="width: 90%;">
+                <hr>
+            </div>
+            <div id="content">
+                <section>
+                    <h1>Input type: Text</h1>
+                    <ul>
+                        <li>Defines a one-line input field for text.</li>
+                        <li>Syntax: &lt;input <u>type="text"</u>&gt;</li>
+                    </ul>
+                    <p>Example:</p>
+                    <i><p>&lt;input type="text" placeholder="I am a text input type" size="box-width"&gt;</p></i>
+                    <input type="text" placeholder="I am a text input type" size="box-width">
+                    <p><b>Note:</b> The default maximum length is 20 characters long</p>
+                    <br>
+                </section>
+                <section>
+                    <h1>Input type: Submit</h1>
+                    <ul>
+                        <li>Defines a button.</li>
+                        <li>Syntax: &lt;input <u>type="button"</u>&gt;</li>
+                    </ul>
+                    <p>Example:</p>
+                    <i><p>&lt;input type="button" value="I am a submit button"&gt;</p></i>
+                    <input type="button" value="I am a submit button">
+                    <br><br>
+                </section>
+                <section>
+                    <h1>Input type: Radio</h1>
+                    <ul>
+                        <li>Defines a button similar to checkboxes but only 1 option can be chosen from a pool of choices.</li>
+                        <li>Syntax: &lt;input <u>type="radio"</u>&gt;</li>
+                    </ul>
+                    <p>Example:</p>
+                    <i><p>&lt;input type="radio" name="option" value="A"&gt;KMS Gneisenau&lt;br&gt;</p></i>
+                    <i><p>&lt;input type="radio" name="option" value="B"&gt;KMS Scharnhorst</p></i>
+                    <input type="radio" name="option" value="A">KMS Gneisenau<br>
+                    <input type="radio" name="option" value="B">KMS Scharnhorst
+                    <p><b>Note:</b> To have 2 options selected at the same time, use unique names for each option.</p>
+                    <br>
+                </section>
+                <section>
+                    <h1>Input type: Checkboxes</h1>
+                    <ul>
+                        <li>Defines a button checkboxes that can be selected (multiple or not).</li>
+                        <li>Syntax: &lt;input <u>type="checkbox"</u>&gt;</li>
+                    </ul>
+                    <p>Example:</p>
+                    <i><p>&lt;input type="checkbox" name="optionA" value="A"&gt;HMS Illustrious&lt;br&gt;</p></i>
+                    <i><p>&lt;input type="checkbox" name="optionB" value="B"&gt;HMS Formidable&lt;br&gt;</p></i>
+                    <i><p>&lt;input type="checkbox" name="optionC" value="C"&gt;HMS Indomitable&lt;br&gt;</p></i>
+                    <i><p>&lt;input type="checkbox" name="optionD" value="D"&gt;HMS Victorious</p></i>
+                    <input type="checkbox" name="optionA" value="A">HMS Illustrious<br>
+                    <input type="Checkbox" name="optionB" value="B">HMS Formidable<br>
+                    <input type="Checkbox" name="optionC" value="C">HMS Indomitable<br>
+                    <input type="Checkbox" name="optionD" value="D">HMS Implacable<br>
+                    <br><br>
+                </section>
+                <section>
+                    <h1>Other input types</h1>
+                    <ul>
+                        <li>color</li>
+                        <li>date</li>
+                        <li>datetime</li>
+                        <li>datetime-local</li>
+                        <li>email</li>
+                        <li>month</li>
+                        <li>Number</li>
+                        <li>range</li>
+                        <li>search</li>
+                        <li>tel</li>
+                        <li>time</li>
+                        <li>url</li>
+                        <li>week</li>
+                    </ul>
+                    <p>Example:</p>
+                    <i><p>&lt;input type="color"&gt;</p></i>
+                    <p>Pick your favorite color :></p>
+                    <input type="color">
+                    <br><br>
+                    <i><p>&lt;input type="date""&gt;</p></i>
+                    <p>Enter your birthday :></p>
+                    <input type="date">
+                    <br><br>
+                </section>
+                <section>
+                    <h1>Action attribute</h1>
+                    <ul>
+                        <li>An attribute for the form tag specifying where data will be sent.</li>
+                        <li>Syntax: &lt;form <u>action="&nbsp;&nbsp;&nbsp;"</u>&gt;</li>
+                    </ul>
+                    <br>
+                </section>
+                <section>
+                    <h1>POST and GET method</h1>
+                    <ul>
+                        <li>POST and GET is how the data will be transmitted to the server.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

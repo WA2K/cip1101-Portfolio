@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CIP-1101: Lecture No. 3</title>
+        <link rel="stylesheet" href="lectStyle.css">
+        <style>
+            table, tr, td{
+                border: 1px solid black;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="header">
+                <div id="headerLeft">
+                    <p><b>CIP-1101: Lecture No. 3</b></p>
+                    <p>HTML Tables</p>
+                </div>
+                <div id="headerRight">
+                    <p>Luzano, John Wayne C.</p>
+                    <p>CSAD</p>
+                </div>
+            </div>
+            <div style="width: 90%;">
+                <hr>
+            </div>
+            <div id="content">
+                <p class="highlight">What is a table?</p>
+                <p>A table is a structure used to make data organized. As discussed in the 1st lecture, early websites used tables for structure and formatting.</p>
+                <br>
+
+                <p class="highlight">How do I create a table?</p>
+                <p>A table is defined using the <code>&lt;table&gt;</code> tag. Below is the fundamental structure of a table in HTML:</p>
+                <div class="evenly-div">
+                    <code>
+                    <p>&lt;table&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;"Header"&lt;/th&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;"Data"&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&lt;/table&gt;</p>
+                    </code>
+                    <div class="center-div">
+                        <code>
+                            <p>Terminologies:</p>
+                            <ul>
+                                <li>tr - rows</li>
+                                <li>th - header</li>
+                                <li>td - data</li>
+                            </ul>
+                        </code>
+                    </div>
+                </div>
+                <br>
+
+                <p class="highlight">Spanning columns/rows?</p>
+                <p>To extend a cell across multiple columns or rows, we use: <code>&lt;colspan="X"&gt;</code> and <code>&lt;rowspan="X"&gt;</code> where X is the number of columns or rows a cell should span. To demonstrate using a 5x5 table; the 1st row's 1st cell must span for 2 columns while the 3rd row's 3rd cell must span for 3 rows:</p>
+                <div class="evenly-div">
+                    <code>
+                    <p>&lt;table&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;1&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;2&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;4&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;5&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;6&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;7&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;8&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;9&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;10&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;11&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td rowspan="3"&gt;12&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;13&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;14&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;15&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;16&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;17&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;18&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;19&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;20&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;21&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;22&lt;/td&gt;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                    <p>&lt;/table&gt;</p>
+                    </code>
+                    <div class="center-div">
+                        <code>
+                            <table>
+                                <tr>
+                                    <td colspan="2">1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td rowspan="3">12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                </tr>
+                            </table>
+                        </code>
+                    </div>
+                </div>
+                <br>
+
+                <p class="highlight">CSS styles used for tables</p>
+                <p>Below are a list of CSS styles for tables and their description:</p>
+                <div class="center-div">
+                    <div>
+                        <ul>
+                            <li>
+                                <p><code>Border: <i>thickness border-type border-color</i>;</code> - adds a border style to the table. Different border style types: <code>dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden.</code></p>
+                            </li>
+                            <li>
+                                <p><code>Border-collapse: <i>parameter</i>;</code> - sets whether table borders should collapse into a single border or be separated as in standard HTML. Parameters: <code>separate, collapse, inherit, initial.</code></p>
+                            </li>
+                            <li>
+                                <p><code>Border-spacing: <i>space-size</i>;</code> - property sets the distance between the borders of adjacent cells.</p>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CIP-1101: Lecture No. 5</title>
+        <link rel="stylesheet" href="lectStyle.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="header">
+                <div id="headerLeft">
+                    <p><b>CIP-1101: Lecture No. 5</b></p>
+                    <p>CSS Fundamentals</p>
+                </div>
+                <div id="headerRight">
+                    <p>Luzano, John Wayne C.</p>
+                    <p>CSAD</p>
+                </div>
+            </div>
+            <div style="width: 90%;">
+                <hr>
+            </div>
+            <div id="content">
+                <p class="highlight">Introduction to CSS3</p>
+                <p>CSS (Cascading Style Sheets) was created by W3C to separate presentation from HTML structure. Key milestones:</p>
+                <ul>
+                    <li><b>1996:</b> CSS Level 1 released</li>
+                    <li><b>1998:</b> CSS Level 2 introduced</li>
+                    <li><b>CSS3:</b> Modular approach (50+ modules) with backward compatibility</li>
+                </ul>
+
+                <div class="css-section">
+                    <p class="css-title"><b>CSS Syntax Fundamentals</b></p>
+                    <div class="code">
+                        selector {<br>
+                        &nbsp;&nbsp;property: value;<br>
+                        &nbsp;&nbsp;/* More declarations */<br>
+                        }
+                    </div>
+                    <p><b>Selector Types:</b></p>
+                    <ul>
+                        <li><b>Element:</b> <code>p { color: red; }</code></li>
+                        <li><b>ID:</b> <code>#para1 { text-align: center; }</code></li>
+                        <li><b>Class:</b> <code>.center { margin: auto; }</code></li>
+                    </ul>
+                </div>
+
+                <div class="css-section">
+                    <p class="css-title"><b>Three Ways to Apply CSS</b></p>
+                    <ol>
+                        <li><b>External:</b> <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></li>
+                        <li><b>Internal:</b> Styles within <code>&lt;style&gt;</code> tags in head</li>
+                        <li><b>Inline:</b> <code>&lt;h1 style="color:blue;"&gt;</code></li>
+                    </ol>
+                    <p><b>Cascading Order:</b> Inline > Internal > External > Browser defaults</p>
+                </div>
+
+                <div class="css-section">
+                    <p class="css-title"><b>CSS Colors & Backgrounds</b></p>
+                    <p><b>Color Formats:</b></p>
+                    <ul>
+                        <li>Named: <code>DodgerBlue</code></li>
+                        <li>HEX: <code>#ff0000</code></li>
+                        <li>RGB/RGBA: <code>rgba(255, 0, 0, 0.5)</code></li>
+                        <li>HSL/HSLA: <code>hsl(120, 100%, 50%)</code></li>
+                    </ul>
+                    <p><b>Background Properties:</b></p>
+                    <div class="code">
+                        body {<br>
+                        &nbsp;&nbsp;background: #fff url("img.png") no-repeat right top;<br>
+                        }
+                    </div>
+                </div>
+
+                <div class="css-section">
+                    <p class="css-title"><b>CSS Borders</b></p>
+                    <p><b>Border Styles:</b> dotted, dashed, solid, double, groove, etc.</p>
+                    <div class="code">
+                        p {<br>
+                        &nbsp;&nbsp;border: 2px solid red;<br>
+                        &nbsp;&nbsp;border-radius: 5px; /* Rounded corners */<br>
+                        }
+                    </div>
+                </div>
+
+                <p class="highlight">Key Concept:</p>
+                <p>CSS solves the problem of style/content mixing in HTML, enabling consistent designs across entire websites with single file changes.</p>
+            </div>
+        </div>
+    </body>
+</html>
