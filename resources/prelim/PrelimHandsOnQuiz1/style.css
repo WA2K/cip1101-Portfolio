@@ -1,0 +1,43 @@
+.table-header{
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+	font-family: "Courier New", monospace;
+	background-color: white;
+}
+
+.float-child{
+	float: left;
+	padding: 20px;
+}
+
+.text-header{
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.text-subheader{
+	font-family: "Courier New", monospace;
+	font-size: 26px;
+}
+
+p{
+	font-family: "Courier New", monospace;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.table-content{
+	padding: 15px;
+	margin-left: 75px;
+	margin-right: 75px;
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+
+body{
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/AFP_Museum_4Jan2025.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
