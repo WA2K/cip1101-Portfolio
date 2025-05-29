@@ -132,5 +132,5 @@ document.getElementById("lectures_close").addEventListener("click", () => {
 });
 
 document.getElementById("rabyte").addEventListener("click", () => {
-    window.location.href = https://wa2k.github.io/CIP1101-RABYTE_PROJECTVER2/;
+    window.location.href = "https://wa2k.github.io/CIP1101-RABYTE_PROJECTVER2/";
 });
