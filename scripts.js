@@ -131,3 +131,7 @@ document.getElementById("lectures_close").addEventListener("click", () => {
     document.getElementById("lectures-t").style.backgroundColor = "#3c81f3";
     document.getElementById("lectures-t").style.border = "solid 1px #29538b";
 });
+
+document.getElementById("rabyte").addEventListener("click", () => {
+    window.location.href("https://wa2k.github.io/CIP1101-RABYTE_PROJECTVER2/");
+});
