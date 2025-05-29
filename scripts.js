@@ -2,7 +2,6 @@ const prelims = document.getElementById("prelims");
 const midterms = document.getElementById("midterms");
 const finals = document.getElementById("finals");
 const lect = document.getElementById("lectures");
-const rabyte = document.getElementById("rabyte");
 
 function openFolder(dialog) {
 	dialog.open = true;
